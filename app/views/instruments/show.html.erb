@@ -1,0 +1,92 @@
+<div class="container">
+<div id="content">
+	<div class="block-white">
+		<div class="block-content">
+		</div>
+		<div class="separator">
+		</div>
+		<div class="block-content">
+			<div class="product-info">
+				<div class="left">
+					<div class="image">
+						<a href="#" title="iMac">
+							<%= image_tag(@instrument.image_url, :size => "228x228") %>
+						</a>
+					</div>
+				</div>
+				<div class="right">
+					<div id="tabs" class="tabs">
+						<a href="#tab-information" class="selected">
+							
+							<div>
+							</div>
+						</a>
+						<a href="#tab-description">
+							Description
+						</a>
+						<a href="#tab-review">
+							Reviews (0)
+						</a>
+						<a href="#tab-related">
+							Related Products (1)
+						</a>
+					</div>
+					<div id="tab-information" class="tab-content">
+						<div id="information">
+						</div>
+						<div class="description">
+							<span>
+								»&nbsp;仪器名称:
+							</span>
+							<a href="#">
+								<%= @instrument.name %>
+							</a>
+							<br>
+							<span>
+								»&nbsp;仪器型号:
+							</span>
+								<%= @instrument.type_name %>
+							<br>
+							<span>
+								»&nbsp;仪器分类:
+							</span>
+								<%= @instrument.itype %>
+							<br>
+							<span>
+								»&nbsp;仪器描述:
+							</span>
+								<%= @instrument.description %>
+						</div>
+						<div class="price">
+							<span class="price-new">
+								$<%= @instrument.price %>
+							</span>
+						</div>
+						<br>
+						<div class="cart">
+							<div>
+								Qty:
+								<input class="quantity" type="text" name="quantity" size="2" value="1">
+								<input type="hidden" name="product_id" value="41">
+								&nbsp;
+								<a id="button-cart" class="button">
+									
+										<%= button_to "Add to Cart" %>
+									
+								</a>
+							</div>
+							<div>
+								<span>
+									&nbsp;&nbsp;&nbsp;- OR -&nbsp;&nbsp;&nbsp;
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="price">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
